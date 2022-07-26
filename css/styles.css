@@ -1,0 +1,18 @@
+.header{
+    background-color: withe;
+    width: 100%;
+    height:auto;
+
+}
+.navbar{
+    background-color: #5883FB;
+    display: flex;
+    padding: 40px ;
+    text-align: right;
+   
+}
+
+.navbar p{
+    padding: 20px ;
+    
+}
