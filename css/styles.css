@@ -1,18 +1,93 @@
 .header{
-    background-color: withe;
+    background-color: white;
     width: 100%;
     height:auto;
+    text-align: center;
 
 }
-.navbar{
-    background-color: #5883FB;
+.main-header{
+    background-color: #f8f6f6;
     display: flex;
-    padding: 40px ;
-    text-align: right;
+    padding: 20px ;
+    color: rgb(3, 3, 71);
    
 }
+
+#contentHeader {
+    color:rgb(3, 3, 71);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 8px;
+    text-align: right;
+}
+.img-logo{
+    max-width: 80%;
+    height: 100px 100px;
+    align-content: left;   
+}
+img{
+    vertical-align: middle;
+}
+
+.uno{
+    max-width: 20%;
+     
+}
+.dos{
+    max-width: 20%;
+}
+.tres{
+    max-width: 35%;
+}
+
+
+#menu-social-header {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7f6;
+}
+#menu-social-header li {
+    background-color: #f6f5f5;
+    display: inline;
+    padding-right: 7px;
+    float: right
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9b8707;
+}
+li{
+    background-color: #9b8707;
+    display: inline;
+    padding: 20px ;
+    float: left;  
+}
+li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 
 .navbar p{
     padding: 20px ;
     
+}
+
+main{
+    text-align: center;
+}
+
+footer{
+    background-color:  #9b8707;
+    padding: 30px ;
+    text-align: right;
+    color: white;
 }
