@@ -1,93 +1,206 @@
-.header{
-    background-color: white;
-    width: 100%;
-    height:auto;
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;    
+}
+h1{ font-size: 3.5em}
+h2{ font-size: 2.5em}
+h3{ font-size: 2em}
+p{ font-size: 1.25em}
+ul{ list-style: none}
+li{ font-size: 1.2em;}
+button{
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(17, 159, 159);
+}
+button:hover{
+    
+    background-color: rgb(10, 96, 96);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: rgb(10, 96, 96)}
+
+header{
+    display:flex;
+    min-height: 100px;
+    background-color: rgb(245,245,245);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header.logo{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+
+}
+
+header .container{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img{
+    margin-left: 10px;
+    width: 50%;
+}
+header nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(10, 96, 96);
+}
+
+
+
+#hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(245,245,245);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("/portafolio/images/hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#soy-yo{
+
+}
+#soy-yo .container{
+    text-align: center;
+    padding: 230px 12px;
+}
+
+#mis-proyectos{
+    background-color: rgb(6, 51, 51);
+    color: rgb(245,245,245);
     text-align: center;
 
 }
-.main-header{
-    background-color: #f8f6f6;
-    display: flex;
-    padding: 20px ;
-    color: rgb(3, 3, 71);
-   
+
+#mis-proyectos .container{
+    padding: 200px 0px;
+}
+#mis-proyectos h2{
+    margin-top: 0;
+    font-size: 3em;
 }
 
-#contentHeader {
-    color:rgb(3, 3, 71);
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 8px;
-    text-align: right;
+#mis-proyectos p{
 }
-.img-logo{
-    max-width: 80%;
-    height: 100px 100px;
-    align-content: left;   
+#mis-proyectos .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
 }
-img{
-    vertical-align: middle;
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("/portafolio/images/easy.JPG");
+    
 }
+.carta:nth-child(2){
 
-.uno{
-    max-width: 20%;
-     
 }
-.dos{
-    max-width: 20%;
-}
-.tres{
-    max-width: 35%;
-}
-
-
-#menu-social-header {
-    display: flex;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f7f6;
-}
-#menu-social-header li {
-    background-color: #f6f5f5;
-    display: inline;
-    padding-right: 7px;
-    float: right
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #9b8707;
-}
-li{
-    background-color: #9b8707;
-    display: inline;
-    padding: 20px ;
-    float: left;  
-}
-li a{
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-.navbar p{
-    padding: 20px ;
+.carta:nth-child(3){
     
 }
 
-main{
+#tecnologias{
+}
+#tecnologias .container{    
     text-align: center;
+    padding: 230px 12px;
+}
+#tecnologias li{
+    margin: 16px 0px;
+    font-weight: bold;
 }
 
-footer{
-    background-color:  #9b8707;
+#contactanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(6, 51, 51);
+    color: rgb(245,245,245);
+    height: 100vh;
+}
+
+
+
+footer .container{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
     padding: 30px ;
-    text-align: right;
+    text-align: center;
+    color: rgb(8, 8, 9);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.buttons-footer{
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons-footer a{
+    text-decoration: none;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
     color: white;
+    background-color: rgb(92, 91, 91);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    transition: all .4s ease-in-out;
+}
+.buttons-footer a:hover{
+    transform: scale(1.2);
 }

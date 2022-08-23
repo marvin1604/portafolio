@@ -7,114 +7,109 @@
   <meta name="robots" content="index,follow">
   <title>Marvin1604|Portafolio</title>
   <meta name="viewport" content="width=device-width, inictial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="icono.png" href="./images/icono.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   
-  <header class="header">
-
-    <div class="main-header">
-
-      <div class="col-md-6">
-        <h1 id="main-logo">
-          <a href="https://marvin1604.github.io/portafolio/">
-            <img src="./images/marvin1604-2.png" class="img-logo"> 
-          </a>
-        </h1>
-      </div>
-         
-
-      <section id="contentHeader">
-
-        <ul id="menu-social-header">
-          <li class="Instagram"> 
-            <a href="https://github.com/marvin1604">
-              <img src="./images/instagram.png" class="uno">
-            </a>
-          </li>
-          <li class="Github">
-            <a href="https://github.com/marvin1604">
-              <img src="./images/github.png" class="dos" >
-            </a>
-          </li>
-          <li class="Linkedin">
-            <a href="https://www.linkedin.com/in/walter-rodriguez-sanchez-67bb8a1b5/">
-              <img src="./images/linkedin.jpg" class="tres">
-            </a>
-          </li>
-        </ul>
-        <p id="email">Email: walter.rodriguez1992@gmail.com</p>
-        <p id="phone">Telefono: +51921823153</p>
-        <p id="country">Dirección: Lima, Perú</p>
-      </section>
-    </div>
-    
-
-
-
-
-    <!-- <nav class="navbar" context="center">
-      <div class="links">
-        <p class="nav-link nav_text" href=" ">Inicio</p>
-        <p href=" ">Proyectos</p>
-        <p href=" ">Tecnologia</p>
-        <p href=" ">Contactos</p>
-      </div>      
-    </nav> -->
-    <nav>
-      <ul>
-        <li>
-          <a href="">Inicio</a>
-        </li>
-        <li>
-          <a href="">Proyectos</a>
-        </li>
-        <li>
-          <a href="">Tecnologia</a>
-        </li>
-        <li>
-          <a href="">Contactos</a>
-        </li>
-      </ul>
-    </nav>
-
-    
-
-
-
-
-
-
-
-    <p>Hola! Soy Walter Rodriguez !, soy desarrollador backend
-      y me apasiona la tecnología</p>
-
-
-  
+  <header>
+    <div class="container">
+      <a href= "https://marvin1604.github.io/portafolio/"  class="logo">
+        <img  src="./images/marvin1604-6.png" alt="logo-marca">
+      </a>
+      <h2 class="nombre"></h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#mis-proyectos">Proyectos</a>
+        <a href="#soy-yo">Quien soy</a>
+        <a href="#tecnologias">Tecnologia</a>
+        <a href="#contactanos">Contactos</a>
+      </nav>
+    </div>    
   </header>
 
-  <main>
-    <h1> Bienvenido</h1>
+  <section id="hero">
+    <img src="./images/foto2.png" width="300px" width="300px" />
+    <h1>Hola! Soy Walter Rodriguez !, soy desarrollador backend<br>
+      y me apasiona la tecnología</h1>
+    <button>Más sobre mi</button>
+    <br>
+    
+  </section>
 
-    <h2>Este es mi portafolio de proyectos, te invito a que puedas ver mi trabajo!!</h2>
+  <section id="soy-yo">
+    <div class="container">
+      <div class="img-container"></div>
+      <h2>Soy <span class="color-acento">Walter Rodríguez</span> </h2>
+      <p>Hola mi nombre es Walter Rodríguez y soy un desarrollador backend junior especializado en lenguaje Python, me he estado formando por 4 meses en Platzi. Manejo lenguaje Python, HTML, CSS, Manejo de Git y Github, Flask y Django. Tengo experiencia en proyectos personales de desarrollo de software.
+        Me apasiona la tecnología, me encanta que mi trabajo pueda convertir ideas en algo real y que mejore la calidad de vida de las personas.
+        Quiero ser parte de una empresa donde pueda aportar con mi conocimiento y mi talento, con mi experiencia en proyectos personales en desarrollo backend con Flask y Django, quiero ayudar a mi equipo de trabajo en el desarrollo de productos web.
+      </p>
+    </div>
+  </section>
 
-    <section>
-      <img src="./images/foto2.png" width="300px" width="300px" />
-    </section>
+  <section id="mis-proyectos">
+    <div class="container">
+      <h2>Mis proyectos</h2>
+      <div class="proyectos">
+        <div class="carta">
+          <h3></h3>
+          <p>EasyNotes</p>
+          <form action="https://github.com/marvin1604/easy-notes">
+            <button>+ Ver más</button>
+          </form>        
+        </div>
+        <div class="carta">
+          <h3></h3>
+          <p>contenido</p>
+          <button>+ Ver más</button>
+        </div>
+        <div class="carta">
+          <h3></h3>
+          <p>contenido</p>
+          <button>+ Ver más</button>
+        </div>
+      </div>      
+    </div>
 
+  </section>
+  
+  <section id="tecnologias">    
+    <div class="container">
+      <h2>Tecnologías</h2>
+      <ul>
+        <li>💚 HTML</li>
+        <li>💚 CSS</li>
+        <li>💚 PYTHON</li>
+        <li>💚 SCRUM</li>
+      </ul>
+    </div>
+  </section>
 
-  </main>
+  <section id="contactanos">
+    <h2>Comunicate conmigo:</h2>
+    <button>Escribeme</button>
+  </section>
 
   <footer>
-    <p id="email">Email: walter.rodriguez1992@gmail.com</p>
-    <p id="phone">Telefono: +51921823153</p>
-    <p id="country">Direccion: Lima, Perú</p>
+    <div class="container">
+      <section id="buttons-footer"> 
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="https://www.instagram.com/developer_python_/" class="fab fa-instagram"></a>
+        <a href="https://github.com/marvin1604" class="fab fa-github"></a>
+        <a href="https://www.linkedin.com/in/walter-rodriguez-sanchez-67bb8a1b5/" class="fab fa-linkedin"></a>
+      </section>
+      <p id="email">Email: walter.rodriguez1992@gmail.com</p>
+      <p id="phone">Telefono: +51921823153</p>
+      <p id="country">Direccion: Lima, Perú</p>
 
+      <p>&copy; Copyright marvin1604 </p>
+    </div>
   </footer>
   
   
-
+  
 </body>
 </html>
