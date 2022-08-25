@@ -274,14 +274,26 @@ footer #buttons-footer{
         width: 100%;
     }
     header .container{
+        display: root;
+        
         flex-direction: row;
         justify-content: space-between;
+
     }
     header nav{        
         flex-direction: row;
+        flex-direction: column;
         padding-bottom: 0px;
-        padding-right: 30px;        
+        padding-right: 30px;
+        padding: 0 100px;        
     }
+
+    header nav a{
+        text-transform: uppercase ;
+    }
+
+
+
     #soy-yo .container{
         display: flex;
         justify-content: space-evenly;
