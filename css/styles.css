@@ -3,10 +3,12 @@
 }
 html{
     scroll-behavior: smooth;
+    /* width: 100%; */
 }
 body{
     font-family: sans-serif;
     margin: 0;
+    
 }
 h1{ font-size: 3em}
 h2{ font-size: 2.5em}
@@ -190,7 +192,7 @@ header a:hover{
 }
 
 #tecnologias .buttons-tecnologias{
-    min-width: 500px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     /* flex-direction: column; */
@@ -240,7 +242,7 @@ footer .container{
 }
 
 footer #buttons-footer{
-    min-width: 500px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
 }
