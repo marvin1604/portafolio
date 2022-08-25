@@ -69,8 +69,12 @@ header nav{
     flex-direction: column;
     text-align: center;
     font-weight: 600;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     font-weight: bold;
+}
+header nav a{
+    padding: 15px;
+    
 }
 header a{
     padding: 5px;
