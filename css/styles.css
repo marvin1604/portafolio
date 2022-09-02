@@ -51,7 +51,6 @@ header.logo{
     display: flex;
     align-items: left;
     padding: 10px 10px;
-
 }
 
 header .container{
@@ -87,8 +86,6 @@ header a:hover{
     color: rgb(10, 96, 96);
 }
 
-
-
 #hero{
     display:flex;
     align-items: center;
@@ -113,9 +110,7 @@ header a:hover{
 #hero img{
     height: 30%;
 }
-#soy-yo{
 
-}
 #soy-yo .img-container{
     margin: 0px;
 }
@@ -140,8 +135,7 @@ header a:hover{
     font-size: 3em;
 }
 
-#mis-proyectos p{
-}
+
 #mis-proyectos .carta{
     background-size: cover;
     background-position: center center;
@@ -181,7 +175,17 @@ header a:hover{
     background-position: center center;
     
 }
-
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("/portafolio/images/Finance-Api.JPG");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
 #tecnologias{
     
     padding: 200px 12px;
@@ -230,27 +234,22 @@ header a:hover{
     height: 100vh;
 }
 
-footer{
-    /* background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+footer{    
     background-color: rgb(245,245,245);
     padding: 10px ;
     text-align: center;
 }
-
 footer .container{
     
     color: rgb(8, 8, 9);
     font-weight: bold;
     font-size: 12px;    
 }
-
 footer #buttons-footer{
     min-width: 300px;
     display: flex;
     justify-content: center;
 }
-
 #buttons-footer a{
     text-decoration: none;
     font-size: 35px;
@@ -274,11 +273,9 @@ footer #buttons-footer{
         width: 100%;
     }
     header .container{
-        display: root;
-        
+        display: root;        
         flex-direction: row;
         justify-content: space-between;
-
     }
     header nav{        
         flex-direction: row;
@@ -287,12 +284,9 @@ footer #buttons-footer{
         padding-right: 30px;
         padding: 0 100px;        
     }
-
     header nav a{
         text-transform: uppercase ;
     }
-
-
 
     #soy-yo .container{
         display: flex;
@@ -318,6 +312,7 @@ footer #buttons-footer{
     display:flex;
     justify-content: center;    
     }
+
     #mis-proyectos p{
         display: block;  
         padding: 10px; 
@@ -342,8 +337,7 @@ footer #buttons-footer{
             url("/portafolio/images/easy.JPG");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
-        
+        background-position: center center;        
     }
     .carta:nth-child(2){
         background-image: linear-gradient(
@@ -366,16 +360,25 @@ footer #buttons-footer{
         background-position: center center;
         
     }
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url("/portafolio/images/Finance-Api.JPG");
+            background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
     #tecnologias{
         background-image: url(/portafolio/images/tecnologias.png);
         background-size: 800px 400px;
         background-repeat: no-repeat;
-        background-position: 70% 40%;
-        
+        background-position: 70% 40%;        
     }
     #tecnologias .container{
         text-align: initial;
-
     }
     #tecnologias ul{
         margin-left: 150px;
