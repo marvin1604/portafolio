@@ -191,7 +191,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("/portafolio/images/premios_platzi.jpg");
+        url("/portafolio/images/premios_platzi.JPG");
         background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -387,7 +387,7 @@ footer #buttons-footer{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)),
-            url("/portafolio/images/premios_platzi.jpg");
+            url("/portafolio/images/premios_platzi.JPG");
             background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
