@@ -186,6 +186,17 @@ header a:hover{
     background-position: center center;
     
 }
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("/portafolio/images/premios_platzi.jpg");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
 #tecnologias{
     
     padding: 200px 12px;
@@ -366,6 +377,17 @@ footer #buttons-footer{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)),
             url("/portafolio/images/Finance-Api.JPG");
+            background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    .carta:nth-child(5){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url("/portafolio/images/premios_platzi.jpg");
             background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
