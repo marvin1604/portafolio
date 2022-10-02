@@ -98,7 +98,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ),url("/portafolio/images/hero2.jpg");
+    ),url("../images/hero2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -148,7 +148,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("/portafolio/images/easy.JPG");
+        url("../images/easy.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -159,7 +159,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("/portafolio/images/agency.JPG");
+        url("../images/agency.JPG");
         background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -169,7 +169,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("/portafolio/images/fastapi.JPG");
+        url("../images/fastapi.JPG");
         background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -180,7 +180,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("/portafolio/images/Finance-Api.JPG");
+        url("../images/Finance-Api.JPG");
         background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -191,7 +191,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url("/portafolio/images/premios_platzi.JPG");
+        url("../images/premios_platzi.JPG");
         background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -312,7 +312,7 @@ footer #buttons-footer{
         justify-content: center;
     }
     #soy-yo .img-container{
-        background-image: url(/portafolio/images/foto2.png);
+        background-image: url(../images/foto2.png);
         background-repeat: none;
         background-size: cover;
         background-position: center center;
@@ -345,7 +345,7 @@ footer #buttons-footer{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)),
-            url("/portafolio/images/easy.JPG");
+            url("../images/easy.JPG");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;        
@@ -355,7 +355,7 @@ footer #buttons-footer{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)),
-            url("/portafolio/images/agency.JPG");
+            url("../images/agency.JPG");
             background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -365,7 +365,7 @@ footer #buttons-footer{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)),
-            url("/portafolio/images/fastapi.JPG");
+            url("../images/fastapi.JPG");
             background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -376,7 +376,7 @@ footer #buttons-footer{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)),
-            url("/portafolio/images/Finance-Api.JPG");
+            url("../images/Finance-Api.JPG");
             background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -387,14 +387,14 @@ footer #buttons-footer{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)),
-            url("/portafolio/images/premios_platzi.JPG");
+            url("../images/premios_platzi.JPG");
             background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         
     }
     #tecnologias{
-        background-image: url(/portafolio/images/tecnologias.png);
+        background-image: url(../images/tecnologias.png);
         background-size: 800px 400px;
         background-repeat: no-repeat;
         background-position: 70% 40%;        
