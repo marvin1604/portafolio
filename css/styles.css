@@ -53,6 +53,7 @@ header .container{
     background-color: rgb(245,245,245);
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 .container .navbar-left{
     display: flex;
@@ -262,6 +263,7 @@ header .container{
     max-width: 400px ;
     border-radius: 20px;
     filter: brightness(90%);
+    z-index: 0;
 }
 #mis-proyectos .carta img:hover{
     transform: scale(1.1);
@@ -514,6 +516,7 @@ footer #buttons-footer{
         margin-right: 10px;
         font-size: 3.5rem;
         color: rgb(10, 96, 96);
+        margin-right: 30px;
     }
     .container .navbar-rigth a:hover,
     .container .menu-cantactame-desktop a:hover{
