@@ -7,8 +7,11 @@
   <meta name="robots" content="index,follow">
   <title>Marvin1604|Portafolio</title>
   <meta name="viewport" content="width=device-width, inictial-scale=1.0">
-  <link rel="stylesheet" href="/portafolio/css/styles.css">
-  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="icon" type="icono.png" href="./images/icono.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -16,24 +19,55 @@
 <body>
   
   <header>
-    <div class="container">
-      <a href= "https://marvin1604.github.io/portafolio/"  class="logo">
-        <img  src="./images/marvin1604-6.png" alt="logo-marca">
-      </a>
-      <h2 class="nombre"></h2>
-      <nav>
+    <nav class="container">
+      <div class="navbar-left">
+        <a href= "https://marvin1604.github.io/portafolio/"  class="logo">
+          <img  src="./images/logo-marvin1604-removebg-preview.png" alt="logo-marca">
+        </a>
+        <!-- <h2 class="nombre">Mi portafolio</h2> -->
+      </div>   
+      <div class="navbar-rigth">
         <a href="index.html">Inicio</a>
         <a href="#mis-proyectos">Proyectos</a>
         <a href="#soy-yo">Quien soy</a>
         <a href="#tecnologias">Tecnologías</a>
-        <a href="#contactanos">Contacto</a>
-      </nav>
-    </div>    
+        <a href="#contactanos">Contacto</a>        
+      </div>
+      <div class="menu-mobile-bars">
+        <a class="fa-solid fa-bars" id="bars" ></a>
+      </div >
+      <div class="menu-cantactame-desktop">
+        <a href="https://github.com/marvin1604" class="fab fa-github"></a>
+        <a href="https://www.linkedin.com/in/walter-rodriguez-sanchez-67bb8a1b5/" class="fab fa-linkedin"></a>
+    </div>
+    </nav>    
   </header>
+
+  <section class="menu-mobile-container inactive">
+    <a href= "https://marvin1604.github.io/portafolio/"  class="logo">
+      <img  src="./images/logo-marvin1604-removebg-preview.png" alt="logo-marca">
+    </a>
+    <h2>Soy Walter Rodriguez, Bienvenido</h2>
+    <i class="fa-solid fa-xmark" id="menu-mobile-close"></i>
+    <ul class="menu-mobile">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#mis-proyectos">Proyectos</a></li>
+        <li><a href="#soy-yo">Quien soy</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#contactanos">Contacto</a></li> 
+    </ul>
+    <h3> Contactame:</h3>
+    <ul class="menu-cantactame">
+        <a href="https://www.instagram.com/developer_python_/" class="fab fa-instagram"></a>
+        <a href="https://github.com/marvin1604" class="fab fa-github"></a>
+        <a href="https://www.linkedin.com/in/walter-rodriguez-sanchez-67bb8a1b5/" class="fab fa-linkedin"></a>
+        <a href="https://twitter.com/MarvinR89804251" class="fa-brands fa-twitter"></a>
+    </ul>
+  </section>
 
   <section id="hero">
     <img src="./images/foto2.png" />
-    <h1>Hola! Soy Walter Rodriguez !, soy desarrollador backend<br>
+    <h1>Hola! Soy Walter Rodriguez !,<br> soy desarrollador Full Stack<br>
       y me apasiona la tecnología.</h1>
     <form action="#soy-yo">
       <button>Más sobre mi</button>
@@ -45,15 +79,30 @@
       <div class="img-container"></div> 
       <div class="texto">
         <h2>Soy <span class="color-acento">Walter Rodríguez</span> </h2>
-        <p>Hola mi nombre es Walter Rodríguez y soy un desarrollador backend junior especializado en lenguaje Python, me he estado formando en Platzi como desarrollador web. Manejo lenguaje Python, HTML, CSS, Manejo de Git y Github, Flask y Django. Tengo experiencia en proyectos personales de desarrollo de software.
+        <p>Hola, mi nombre es Walter Rodríguez y soy un desarrollador Full Stack, me he estado formando en Platzi como desarrollador web. Manejo lenguaje Python, HTML, CSS, JavaScript, Manejo de Git y Github, Flask y Django. Tengo experiencia en proyectos personales de desarrollo de software.
         </p>
+        <br>
         <p>
           Me apasiona la tecnología, me encanta que mi trabajo pueda convertir ideas en algo real y que mejore la calidad de vida de las personas.
         </p>
+        <br>
         <p>
-          Quiero ser parte de una empresa donde pueda aportar mi conocimiento y mi talento, seguir adquiriendo experiencia en proyectos escalables en desarrollo WEB, tambien quiero ser de ayuda para mi equipo de trabajo y seguir desarrollandome como developer.
+          Quiero ser parte de una empresa donde pueda aportar mi conocimiento y mi talento.
         </p>
-      </div>     
+        <br>
+        <a href="https://drive.google.com/file/d/1vknRLtTCIvzQjGVY7F0G4fQCGpI4QyWr/view">Descarga mi curriculum Aquí</a>
+
+      </div>          
+    </div>
+    <div class="soy-yo-extras">
+      <div class="perseverancia">
+        <img src="./images/perseverante.png" alt="">
+        <p>La perseverancia es una palabra que me definen, tengo metas y estoy determinado a alcanzarlas.</p>
+      </div>
+      <div class="amor">
+        <img src="./images/amor-tecnologia.jpg" alt="">
+        <p>El amor por la tecnología y la programación es fundamental en mi vida, me encanta poder tener ideas y hacerlas reales.</p>
+    </div>
     </div>
   </section>
 
@@ -61,17 +110,20 @@
     <div class="container">
       <h2>Mis proyectos</h2>
       <div class="proyectos">
+
         <div class="carta">
+          <img src="./images/proyectos/easy.JPG" alt="">
           <h3>EasyNotes</h3>
           <p>Una pagina web creada mediante el framkwork Flask para la gestion de tareas,
             puedes crear usuarios, tambien crear tareas y actualizar el estado de las tareas.
-
           </p>
           <form action="https://github.com/marvin1604/easy-notes">
             <button>+ Ver más</button>
           </form>        
         </div>
+
         <div class="carta">
+          <img src="./images/proyectos/agency.JPG" alt="">
           <h3>Platzi Intelligence Agency Web</h3>
           <p>Este proyecto extrae documentos desclasificados
              de la  agencia de inteligencia de EEUU(CIA)
@@ -80,7 +132,9 @@
             <button>+ Ver más</button>
           </form>
         </div>
+
         <div class="carta">
+          <img src="./images/proyectos/fastapi.JPG" alt="">
           <h3>Api Tweeter</h3>
           <p>Este proyecto consiste en la construccion de una api para Tweeter
             donde se usa el metodo GET, POST, PUT, DELETE, mediante el Framwork FAST API
@@ -89,7 +143,9 @@
             <button>+ Ver más</button>
           </form>
         </div>
+
         <div class="carta">
+          <img src="./images/proyectos/Finance-Api.JPG" alt="">
           <h3>Finance API</h3>
           <p>Este proyecto consiste en mostrar información financiera del mercado bursatil,
             utilizando la Api de Yahoo Finance, mediante el uso de Python
@@ -99,6 +155,7 @@
           </form>
         </div>
         <div class="carta">
+          <img src="./images/proyectos/premios_platzi.JPG" alt="">
           <h3>Premios-Platzi</h3>
           <p>Una aplicacion creada apartir del Framwork Django, con el fin de realizar 
             diversas encuestas para conocer el sentimiento de los alumnos de la plataforma
@@ -108,6 +165,44 @@
             <button>+ Ver más</button>
           </form>
         </div>
+        <div class="carta">
+          <img src="./images/proyectos/instagram.JPG" alt="">
+          <h3>Login-de-Instagram</h3>
+          <p>Proyecto donde replicamos la Pagina de Login de Instagram, con las tecnologias html y css.
+          </p>
+          <form action="https://github.com/marvin1604/Login-de-Instagram">
+            <button>+ Ver más</button>
+          </form>
+        </div>
+        <div class="carta">
+          <img src="./images/proyectos/youtube-replica.PNG" alt="">
+          <h3>Interface de Youtube</h3>
+          <p>Proyecto basado en la interface de Youtube, utilizando tecnologias de HTML5 y CSS para mejorar habilidades de Frontend.
+          </p>
+          <form action="https://github.com/marvin1604/interface-de-youtube">
+            <button>+ Ver más</button>
+          </form>
+        </div>
+        <div class="carta">
+          <img src="./images/proyectos/tienda-online.JPG" alt="">
+          <h3>tienda-online</h3>
+          <p>Desarrollo de una aplicacion web simulando una tienda online para la venta de productos tecnologicos.
+          </p>
+          <form action="https://github.com/marvin1604/tienda-online">
+            <button>+ Ver más</button>
+          </form>
+        </div>
+        <div class="carta">
+          <img src="./images/proyectos/twiter.JPG" alt="">
+          <h3>Twitter-profile</h3>
+          <p>Proyecto donde replicamos la Pagina de perfil de twitter, con las tecnologias html y css.
+          </p>
+          <form action="https://github.com/marvin1604/Twitter-profile">
+            <button>+ Ver más</button>
+          </form>
+        </div>
+
+
       </div>      
     </div>
 
@@ -116,33 +211,105 @@
   <section id="tecnologias">    
     <div class="container">
       <h2>Tecnologías:</h2>
-      <ul>
-        <li>💚 PYTHON</li>
-        <li>💚 HTML</li>
-        <li>💚 CSS</li>
-        <li>💚 SCRUM</li>
-        <li>💚 FLASK</li>
-        <li>💚 DJANGO</li>
-        <li>💚 BOOTSRAP</li>
-        <li>💚 GIT</li>
-        <li>💚 MYSQL</li>
-        <li>💚 GITHUB</li>
-        <br>
-      </ul>      
+      <div class="container-images-tecnologias">
+        <div>
+          <img src="./images/tecnologias/html5-original.svg" alt="">
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/css3-original.svg" alt="">
+          <p>CSS</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/javascript-original.svg"
+         alt="">
+          <p>Javascript</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/python-original.svg" alt="">
+          <p>Python</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/react-original.svg" alt="">
+          <p>React</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/django-plain.svg" alt="">
+          <p>Django</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/figma-original.svg" alt="">
+          <p>Figma</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/flask-original.svg" alt="">
+          <p>Flask</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/git-original.svg" alt="">
+          <p>Git</p>
+        </div>
+        <div>
+          <img src="./images/tecnologias/github-original.svg" alt=""> 
+          <p>GitHub</p>
+        </div>
+      </div>
+      
+      <h2>Cursos Principales</h2>
+      <h3><a href="https://platzi.com/p/walter.rodriguez1992/">Sigue mi carrera en Platzi Aquí</a></h3>
+      <div class="container-images-cursos">
+        <div class="curso-1">
+          <img src="https://static.platzi.com/media/achievements/badge-practico-html-css-1-106665ee-bf4f-4301-8991-1fab9e54a73e.png" alt="">
+          <p>Cursos practico HTML y CSS</p>
+          <form action="https://platzi.com/p/walter.rodriguez1992/curso/1758-html-practico/diploma/detalle/">
+            <button>Ver certificado</button>
+          </form>
+        </div>
+        <div class="curso-2">
+          <img src="https://static.platzi.com/media/achievements/piezas-django-intermedio-testing-static-files-django-admin_badge-354a5d94-cd66-4a58.png" alt="">
+          <p>Curso de Django Intermedio</p>
+          <form action="https://platzi.com/p/walter.rodriguez1992/curso/2728-django-intermedio/diploma/detalle/">
+            <button>Ver certificado</button>
+          </form>
+        </div>
+        <div class="curso-3">
+          <img src="https://static.platzi.com/media/achievements/badge-curso-practico-frontend-developer-d28c2eb0-cd3e-4951-bb96-5f1bcab2add5.png" alt="">
+          <p>Curso Práctico de Frontend Developer</p>
+          <form action="https://platzi.com/p/walter.rodriguez1992/curso/2477-frontend-developer-practico/diploma/detalle/">
+            <button>Ver certificado</button>
+          </form>
+        </div>
+        <div class="curso-4">
+          <img src="https://static.platzi.com/media/achievements/practico-javascript_badge-fb533fa5-73c8-4f75-9d81-0294d9013ab5.png" alt="">
+          <p>Curso Práctico de JavaScript</p>
+          <form action="https://platzi.com/p/walter.rodriguez1992/curso/3271-javascript-practico/diploma/detalle/">
+            <button>Ver certificado</button>
+          </form>
+        </div>
+        <div class="curso-5">
+          <img src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png" alt="">
+          <p>Curso Profesional de Git y GitHub</p>
+          <form action="https://platzi.com/p/walter.rodriguez1992/curso/3271-javascript-practico/diploma/detalle/">
+            <button>Ver certificado</button>
+          </form>
+        </div>
+        <div class="curso-6">
+          <img src="https://static.platzi.com/media/achievements/badge-profesional-de-python-22f3ae5d-ce99-4519-a20a-2aa46ea2c840.png" alt="">
+          <p>Curso Profesional Python</p>
+          <form action="https://platzi.com/p/walter.rodriguez1992/curso/2397-python-profesional/diploma/detalle/">
+            <button>Ver certificado</button>
+          </form>
+        </div>
+
+      </div>
     </div>
-    <div class="buttons-tecnologias">
-      <i class="fab fa-python"></i>
-      <i class="fab fa-html5"></i>
-      <i class="fab fa-css3-alt"></i>
-      <i class="fab fa-js"></i>
-      <i class="fa-brands fa-github"></i>
-    </div>
+    
   </section>
 
   <section id="contactanos">
     <h2>Comunicate conmigo:</h2>
     <form action="mailto:walter.rodriguez.dev@gmail.com">
-      <button>Escribeme</button>
+      <button>Escribeme un correo Aqui</button>
     </form>
   </section>
 
@@ -162,7 +329,7 @@
     </div>
   </footer>
   
-  
+  <script src="./main.js"></script>
   
 </body>
 </html>
