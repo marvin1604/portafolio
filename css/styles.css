@@ -516,6 +516,7 @@ footer #buttons-footer{
         margin-right: 10px;
         font-size: 3.5rem;
         color: rgb(10, 96, 96);
+        margin-right: 30px;
     }
     .container .navbar-rigth a:hover,
     .container .menu-cantactame-desktop a:hover{
