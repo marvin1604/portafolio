@@ -1,21 +1,23 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html{
     scroll-behavior: smooth;
-    /* width: 100%; */
+    font-size: 62.5%;        
+    font-family: 'Roboto Mono', monospace;
 }
 body{
-    font-family: sans-serif;
     margin: 0;
     
 }
-h1{ font-size: 3em}
-h2{ font-size: 2.5em}
-h3{ font-size: 2em}
-p{ font-size: 1.25em}
+h1{ font-size: 4rem}
+h2{ font-size: 3rem}
+h3{ font-size: 2.5rem}
+p{ font-size: 1.5rem}
 ul{ list-style: none}
-li{ font-size: 1.2em;}
+li{ font-size: 1.6rem;}
 button{
     font-size: 1em;
     padding: 15px 15px;
@@ -25,74 +27,124 @@ button{
     color: white;
     background-color: rgb(17, 159, 159);
 }
-button:hover{
-    
+button:hover{   
     background-color: rgb(10, 96, 96);
+    cursor: pointer;
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
 }
 
 .color-acento{color: rgb(10, 96, 96)}
 
-header{
-    display: flex;
-    min-height: 80px;
-    background-color: rgb(245,245,245);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-header.logo{
-    margin: 10;
-    display: flex;
-    align-items: left;
-    padding: 10px 10px;
+.inactive{
+    display: none;
+    margin-top: 0;
 }
 
 header .container{
-    display: flex;    
-    /* flex-direction: column; */
+    position:fixed;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    padding-top: 4px;
+    background-color: rgb(245,245,245);
+    justify-content: space-between;
     align-items: center;
 }
+.container .navbar-left{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    align-items: center;
+    margin-left: 20px;
+}
+.container .navbar-left h2{
+    margin-left: 20px;
+    font-size: 1.8rem;
+}
+.container .navbar-left img{
+    width: 230px;
+}
+.container .navbar-rigth{
+    display: none;
+}
+.container .menu-mobile-bars{
+    width: 50px;
+    font-size: 2.9rem;
+}
+.container .menu-cantactame-desktop{
+    display: none;
+}
 
-.logo img{
-    margin-left: 10px;
-    width: 150px;
-}
-header nav{
-    /* display:flex; */
+/* Menu mobile*/
+.menu-mobile-container{
+    position: fixed;
+    z-index: 2;
+    top: 0;
     flex-direction: column;
-    text-align: center;
-    font-weight: 600;
-    padding-bottom: 0px;
-    font-weight: bold;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background: rgb(246, 243, 243);
 }
-header nav a{
-    padding: 15px;
+.menu-mobile-container h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+.menu-mobile-container #menu-mobile-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2.5rem;
+} 
+.menu-mobile-container .logo img{
+    margin: 20px;
+    width: 200px;
+}
+.menu-mobile-container h3{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.menu-mobile-container ul{
+    margin-left: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+.menu-mobile-container li{
+    margin-bottom: 30px;
+}
+.menu-mobile-container a{
+    text-decoration: none;
+    color: rgb(10, 96, 96);    
+    font-size: 1.8rem;
+}
+.menu-mobile-container .menu-cantactame{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
     
 }
-header a{
-    padding: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+.menu-mobile-container .menu-cantactame a{
+    margin: 10px 20px;
+    font-size: 4rem;
 }
 
-header a:hover{
-    color: rgb(10, 96, 96);
-}
-
+/*Imagen principal*/
 #hero{
+    padding-top: 100px;
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 120vh;
+    text-align: center;    
+    height: 100vh;
     color: rgb(245,245,245);
     background-image: linear-gradient(
         0deg,
@@ -103,137 +155,217 @@ header a:hover{
     background-size: cover;
     background-position: center center;
 }
-
+#hero img{
+    top:110px;
+    height: 40%;
+    margin: 20px 0;
+}
+#hero h1{
+    font-size: 2.4rem;
+    margin: 30px 0;
+}
 #hero button{
     font-size: 15px;
 }
-#hero img{
-    height: 30%;
-}
 
+
+/*Soy Yo*/
+#soy-yo{
+    width: 100%;
+}
 #soy-yo .img-container{
     margin: 0px;
 }
 
 #soy-yo .container{
     text-align: justify;
-    padding: 230px 12px;
+    padding: 30px 12px;
 }
+#soy-yo .texto a{
+    font-size: 1.4rem;
+    color: rgb(6, 51, 51);
+}
+#soy-yo .soy-yo-extras{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+#soy-yo .perseverancia, #soy-yo .amor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#soy-yo .perseverancia img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+#soy-yo .perseverancia p{
+    font-size: 1.1rem;
+    width: 80%;
+}
+#soy-yo .amor img{
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+#soy-yo .amor p{
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+
+
+
+/* Proyectos*/
 
 #mis-proyectos{
     background-color: rgb(6, 51, 51);
     color: rgb(245,245,245);
     text-align: center;
+    width: 100%;
 
 }
 
 #mis-proyectos .container{
-    padding: 230px 0px;
+    padding-top: 20px;
+    width: 100%;
 }
 #mis-proyectos h2{
-    margin-top: 30px;
-    font-size: 3em;
+    margin: 30px;
+    font-size: 3.5rem;
 }
-
-
+#mis-proyectos .proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 10rem;
+    width: 100%;
+}
 #mis-proyectos .carta{
-    background-size: cover;
-    background-position: center center;
-    padding: 50px;
-    margin: 20px;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 20px;
 }
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        url("../images/easy.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
+#mis-proyectos .carta img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    max-width: 400px ;
+    border-radius: 20px;
+    filter: brightness(90%);
 }
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        url("../images/agency.JPG");
-        background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#mis-proyectos .carta img:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
 }
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        url("../images/fastapi.JPG");
-        background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
+#mis-proyectos .carta h3{
+    margin: 10px 0;
+    text-align: center;
 }
-.carta:nth-child(4){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        url("../images/Finance-Api.JPG");
-        background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
+#mis-proyectos .carta p{
+    margin: 10px 0;
+    text-align: justify;
 }
-.carta:nth-child(5){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        url("../images/premios_platzi.JPG");
-        background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
+#mis-proyectos .carta button{
+    font-size: 1.4rem;
 }
+
+/*Tecnologias*/
+
 #tecnologias{
-    
-    padding: 200px 12px;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    margin-top: 20px;
 }
-#tecnologias .container{    
-    text-align: initial;
-    margin-left: 80px;
-}
-#tecnologias li{
-    margin: 16px 0px;
-    font-weight: bold;
-}
-
-#tecnologias .buttons-tecnologias{
-    min-width: 300px;
+#tecnologias .container{
+    width: 100%;
+    min-height: calc(100vh - 100px);
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-    text-align: center;
-    justify-content: space-around;
-    
 }
-#tecnologias i{
-    padding: 20px 10px;
-    text-decoration: none;
-    font-size: 35px;
-    width: 50px;
-    height: 50px;
-    line-height: 10px;
-    text-align: center;
+#tecnologias .container .container-images-tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#tecnologias .container .container-images-tecnologias div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20%;
+    background: #25262a;
+    font-size: 1.4rem;
     color: white;
-    background-color: rgb(124, 116, 19);
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
-    transition: all .4s ease-in-out;
+    width: 80px;
+}
+#tecnologias .container .container-images-tecnologias img{
+     width: 60px;     
+     margin: 10px;     
+}
+#tecnologias .container .container-images-tecnologias div:hover{
+    transform: scale(1.2);
+    filter: brightness(100%);
+}
+#tecnologias .container .container-images-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#tecnologias .container  h3 a{
+    font-size: 2rem;
+    color: rgb(6, 51, 51);    
+}
+#tecnologias .container  h3 a:hover{
+    font-size: 2.8rem;
+    color: rgb(27, 181, 181);
+}
+#tecnologias .container .container-images-cursos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    background: rgba(6, 45, 45, 0.896);
+    width: 200px;
+    height: 200px;
+    max-width: 300px;
+    border-radius: 20px;
+}
+#tecnologias .container .container-images-cursos p{
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+#tecnologias .container .container-images-cursos button{
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+#tecnologias .container .container-images-cursos img{
+    width: 80px;     
+    margin: 10px;    
+}
+#tecnologias .container .container-images-cursos img:hover{
+    filter: brightness(100%);
 }
 
+/*Contactanos*/
 #contactanos{
     display: flex;
     flex-direction: column;
@@ -242,16 +374,19 @@ header a:hover{
     text-align: center;
     background-color: rgb(6, 51, 51);
     color: rgb(245,245,245);
-    height: 100vh;
+    height: 80vh;
+}
+#contactanos button{
+    font-size: 1.4rem;
 }
 
+/*Footer*/
 footer{    
     background-color: rgb(245,245,245);
     padding: 10px ;
     text-align: center;
 }
-footer .container{
-    
+footer .container{    
     color: rgb(8, 8, 9);
     font-weight: bold;
     font-size: 12px;    
@@ -269,7 +404,7 @@ footer #buttons-footer{
     line-height: 50px;
     text-align: center;
     color: white;
-    background-color: rgb(19, 20, 80);
+    background-color: rgb(6, 51, 51);
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
     transition: all .4s ease-in-out;
@@ -277,149 +412,128 @@ footer #buttons-footer{
 #buttons-footer a:hover{
     transform: scale(1.2);
 }
-
-@media(min-width: 720px){
-    header{
-        position: fixed;
-        width: 100%;
+@media(min-width:640px){
+    .container .menu-mobile-bars{
+        display: none;
     }
-    header .container{
-        display: root;        
-        flex-direction: row;
-        justify-content: space-between;
+    .container .navbar-left{
+        width: 30%;
     }
-    header nav{        
-        flex-direction: row;
-        flex-direction: column;
-        padding-bottom: 0px;
-        padding-right: 30px;
-        padding: 0 100px;        
+    .container .navbar-rigth{
+        display: flex;
+        justify-content: center;
+        width: 60%;
     }
-    header nav a{
-        text-transform: uppercase ;
+    .container .navbar-rigth a{
+        margin: 0 8px;
+        display: flex;
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: rgb(10, 96, 96);
+        font-weight: bold;       
     }
-
+    #hero h1{
+        font-size: 4rem;
+    }
     #soy-yo .container{
         display: flex;
-        justify-content: space-evenly;
-    }
-    #soy-yo .texto{
-        width: 50%;
-        padding: 0px 40px;
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
     }
     #soy-yo .img-container{
         background-image: url(../images/foto2.png);
         background-repeat: none;
         background-size: cover;
         background-position: center center;
-        height: 500px;
-        width: 500px;
+        height: 300px;
+        width: 300px;
     }
-    #mis-proyectos .proyectos{
-    display:flex;
-    justify-content: center;    
+    #soy-yo{
+        height: calc(100vh - 70px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #soy-yo .container{
+        margin: 0;
+    }
+    #soy-yo .texto{
+        width: 50%;
+        padding: 0px 40px;
+        max-width: 600px;
+    }
+    #soy-yo .soy-yo-extras{
+        display: flex;
+        flex-direction: row;
+    }
+    #soy-yo .perseverancia, #soy-yo .amor{
+        width: 50%;
+    }
+    #soy-yo .perseverancia p, #soy-yo .amor p{
+        font-size: 1.4rem;
+    }
+    #mis-proyectos .proyectos .carta{
+        max-width: 300px;
+        min-height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #tecnologias .container .container-images-tecnologias div{
+        width: 120px;
+        
+    }
+    #tecnologias .container .container-images-tecnologias img{
+        width: 80px;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    #tecnologias .container .container-images-cursos div{
+        width: 350px;
+        height: 280px;
+    }
+}
+@media(min-width:1200px){
+    header .container{
+        max-width: 100%;
+    }
+    .container .navbar-left .logo{
+        margin-left: 20px;
+    }
+    .container .navbar-rigth{
+        justify-content: end;
+    }
+    .container .navbar-rigth a:hover{
+        color: rgb(17, 159, 159);
+    }
+    .container .menu-cantactame-desktop{
+        display: block;
+    }
+    .container .menu-cantactame-desktop a{
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 3.5rem;
+        color: rgb(10, 96, 96);
+    }
+    .container .navbar-rigth a:hover,
+    .container .menu-cantactame-desktop a:hover{
+        color: rgb(17, 159, 159);
+    }
+    #hero button{
+        font-size: 2rem;
+    }
+    #soy-yo .container{
+        width: 1200px;
+    }
+    #soy-yo .perseverancia, #soy-yo .amor{
+        width: 600px;
+    }
+    #tecnologias .container .container-images-cursos button{
+        font-size: 1.6rem;
+    }
+    #contactanos button{
+        font-size: 2rem;
     }
 
-    #mis-proyectos p{
-        display: block;  
-        padding: 10px; 
-        }
-    #mis-proyectos h3{
-        margin-top: 10px;  
-        }
-    #mis-proyectos h2{
-        margin-top: 10px;
-        font-size: 3em;
-    }
-    #mis-proyectos .carta{
-        padding:  10px;
-        max-width: 200px;  
-        
-    }
-    .carta:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),
-            url("../images/easy.JPG");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;        
-    }
-    .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),
-            url("../images/agency.JPG");
-            background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    .carta:nth-child(3){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),
-            url("../images/fastapi.JPG");
-            background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        
-    }
-    .carta:nth-child(4){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),
-            url("../images/Finance-Api.JPG");
-            background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        
-    }
-    .carta:nth-child(5){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),
-            url("../images/premios_platzi.JPG");
-            background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        
-    }
-    #tecnologias{
-        background-image: url(../images/tecnologias.png);
-        background-size: 800px 400px;
-        background-repeat: no-repeat;
-        background-position: 70% 40%;        
-    }
-    #tecnologias .container{
-        text-align: initial;
-    }
-    #tecnologias ul{
-        margin-left: 150px;
-    }
-    #tecnologias i{
-        padding: 30px 10px;
-        text-decoration: none;
-        font-size: 70px;
-        width: 100px;
-        height: 100px;
-        line-height: 30px;
-        text-align: center;
-        color: white;
-        background-color: rgb(124, 116, 19);
-        border-radius: 50%;
-        box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
-        transition: all .4s ease-in-out;
-    }
-    #tecnologias i:hover{
-        transform: scale(1.2);
-    }    
 }
+
