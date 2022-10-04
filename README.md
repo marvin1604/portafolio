@@ -10,6 +10,7 @@ Implementando HTML y CSS, comparto mis proyectos y muestros mis trabajos.
 #### Tecnologias:
 - CSS
 - HTML
+- JavaScript
 
 
 #### Visualiza la App:
